@@ -1,38 +1,81 @@
 .App {
-  text-align: center;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.h2 {
+    font-size: 30px;
+    color: #56b19b;
+    margin: 20px;
+    font-family: "Playwrite CO", cursive;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 120px;
+    height: 24px;
+    -webkit-mask:
+        radial-gradient(circle closest-side, #000 94%, #0000) 0 0/25% 100%,
+        linear-gradient(#000 0 0) center/calc(100% - 12px) calc(100% - 12px) no-repeat;
+    background: linear-gradient(#25b09b 0 0) 0/0% no-repeat #ddd;
+    animation: l7 2s infinite linear;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@keyframes l7 {
+    100% {
+        background-size: 100%
+    }
 }
 
-.App-link {
-  color: #61dafb;
+.input {
+    width: max-content;
+    padding: 5px 0;
+    font-size: 15px;
+    text-align: center;
+    background-color: #56b19b;
+    color: #0C0C0C;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-bottom: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input:focus {
+    outline: none;
+}
+
+.input::-webkit-inner-spin-button,
+.input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: max-content;
+}
+
+.p {
+    width: max-content;
+    background-color: #56b19b;
+    color: #0C0C0C;
+    margin: 5px;
+    padding: 4px 12px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.loader-container,
+.table-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
