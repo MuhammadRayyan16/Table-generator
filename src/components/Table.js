@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import '../App.css';
 
 function Tablegenerator() {
-    const [num, setNum] = useState('');
-    const [loading, setLoading] = useState(true);
-    const arrs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    let [num, setNum] = useState('');
+    let [loading, setLoading] = useState(true);
+    let arrs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
     useEffect(() => {
         load();
