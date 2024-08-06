@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import '../App.css';
+import '../components/Table.css';
+
 
 function Tablegenerator() {
     let [num, setNum] = useState('');
