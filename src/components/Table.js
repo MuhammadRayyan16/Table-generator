@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import '../components/Table.css';
 
+
+
+
 function Tablegenerator() {
     let [num, setNum] = useState('');
     let [loading, setLoading] = useState(true);
